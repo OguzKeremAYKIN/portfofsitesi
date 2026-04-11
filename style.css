@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root{
+    --gruvbox-dark1: #1d2021;
+    --gruvbox-dark2:#282828;
+    --gruvbox-dark3:#32302f;
+    --gruvbox-white1:#fbf1c7;
+    --gruvbox-white2:#ebdbb2;
+    --gruvbox-white3:#d5c4a1;
+    --gruvbox-yellow:#fabd2f;
+    --gruvbox-green:#b8bb26;
+    --gruvbox-blue:#458588;
+    --gruvbox-orange:#fe8019;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+     background-color: var(--gruvbox-dark2);
+}
+
+h1{
+    color: var(--gruvbox-white1);
+    margin: 5%;
+}
+
+#topbar {
+    background-color: var(--gruvbox-dark1);
+    padding: 15px;
+    display:inline-flex;
+    position: absolute;
+    list-style: none;
+    width: 90%;
+    height: 5%;
+    margin: 2% 5% 0 5%;
+    border-radius: 10px;
+    border: 1px solid var(--gruvbox-yellow);
+    box-shadow: 0 0 20px 0 var(--gruvbox-yellow);
+}
+
+#topbar li{
+    vertical-align: middle;
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+#topbar li a{
+  font-family: "Cascadia Code";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+    color: var(--gruvbox-white1);
+}
+
+#topbar li a:hover{
+    background-color: var(--gruvbox-white1);
+    color: #1d2021;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 var(--gruvbox-white1);
+    transition: 250ms;
+}
+
+.box-1{
+    width: 100vw;
+    height: 120vh;
+    background-color: #282828;
+    display: flex;
+    align-items: center;
+
+}
+
+.highlight{
+    color: var(--gruvbox-blue);
+    font-weight: bold;
+}
+
+#typewriter::after{
+    content: '|';
+    animation: blink 0.7 infinite;
+}
+
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+}
+
+.box-2{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ebdbb2;
+    display: flex;
+    align-items: center;
+
+}
+.box-3{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--gruvbox-dark3);
+    display: flex;
+    align-items: center;
+
+}
+.box-4{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--gruvbox-white1);
+    display: flex;
+    align-items: center;
+
+}
+
+#sidedots{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    top: 40vh;
+    left: 97vw;
+    font-size: 48px;
+}
+
+#sidedots li{
+    padding: 0;
+    margin: 0;
+}
+
+#sidedots li a{
+    text-decoration: none;
+    color: var(--gruvbox-green);
+    font-weight: bolder;
+    text-shadow: 0 0 5px 0 var(--gruvbox-green);
+}
